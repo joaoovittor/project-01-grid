@@ -1,0 +1,72 @@
+/*  Color   */
+:root {
+  --co-0: #ffffff;
+  --co-1: #d9d9d9;
+  --co-2: #a6a6a6;
+  --co-3: #737373;
+  --co-4: #333d43;
+  --co-5: #181917;
+  --co-6: linear-gradient(180deg, #364047, #000000);
+  --co-7: #000000;
+}
+
+.co-0 {
+  color: var(--co-0);
+}
+.co-1 {
+  color: var(--co-1);
+}
+.co-2 {
+  color: var(--co-2);
+}
+.co-3 {
+  color: var(--co-3);
+}
+.co-4 {
+  color: var(--co-4);
+}
+.co-5 {
+  color: var(--co-5);
+}
+.co-6 {
+  color: var(--co-6);
+}
+.co-7 {
+  color: var(--co-7);
+}
+
+/*  Typography   */
+
+/*  Global   */
+body {
+  margin: 0;
+  padding: 0;
+}
+button {
+  padding: 0;
+  border: none;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  margin: 0;
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
