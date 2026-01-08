@@ -313,8 +313,18 @@ a {
     grid-template-columns: 1fr;
   }
 }
+@media (max-width: 699px) {
+  .testdrive-specifications li:nth-child(3) {
+    grid-column: 1 / -1;
+  }
+}
 @media (max-width: 270px) {
   .testdrive-specifications {
     grid-template-columns: auto;
   }
+}
+
+/*  Cars   */
+.content-bg-2 {
+  background: var(--co-6);
 }
