@@ -3,7 +3,7 @@
   --co-0: #ffffff;
   --co-1: #d9d9d9;
   --co-2: #a6a6a6;
-  --co-3: #737373;
+  --co-3: #505050;
   --co-4: #333d43;
   --co-5: #181917;
   --co-6: linear-gradient(180deg, #364047, #000000);
@@ -65,13 +65,60 @@
   font: 700 1.2rem/1 "Cormorant Garamond", serif;
   text-transform: uppercase;
 }
-
+.font-1-ab {
+  font: 300 12rem/1 "Anton", serif;
+  letter-spacing: 6vw;
+}
+.font-2-ab {
+  font: 300 3rem/1 "Anton", serif;
+}
+.font-1-ac {
+  font: 400 1.3rem/1.3 "Cormorant Garamond", serif;
+  text-transform: uppercase;
+}
+.font-2-ac {
+  font: 700 1.4rem/1.3 "Cormorant Garamond", serif;
+}
+@media (max-width: 1280px) {
+  .font-1-ab {
+    font-size: 10rem;
+  }
+}
+@media (max-width: 1095px) {
+  .font-1-ab {
+    font-size: 9rem;
+  }
+}
+@media (max-width: 949px) {
+  .font-1-ab {
+    font-size: 8rem;
+    letter-spacing: 5vw;
+  }
+}
+@media (max-width: 831px) {
+  .font-1-ab {
+    font-size: 6.5rem;
+    letter-spacing: 5vw;
+  }
+}
+@media (max-width: 757px) {
+  .font-1-ab {
+    font-size: 6rem;
+    letter-spacing: 4vw;
+  }
+}
 @media (max-width: 740px) {
   .font-1-s {
     font-size: 3.5rem;
   }
   .font-1-xs {
     font-size: 1.6rem;
+  }
+}
+@media (max-width: 595px) {
+  .font-1-ab {
+    font-size: 4rem;
+    letter-spacing: 3vw;
   }
 }
 @media (max-width: 380px) {
@@ -189,6 +236,7 @@ a {
   display: grid;
   grid-template-columns: minmax(350px, 1fr) auto minmax(350px, 1fr);
   padding: 0 20px;
+  padding-bottom: 100px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -327,4 +375,96 @@ a {
 /*  Cars   */
 .content-bg-2 {
   background: var(--co-6);
+}
+.cars-title {
+  padding-top: 100px;
+  margin-left: 100px;
+}
+.cars-container {
+  display: grid;
+  grid-template-columns: 0.8fr 1fr 0.8fr;
+  padding: 0px 60px;
+  gap: 35px;
+  max-width: 1500px;
+  align-items: start;
+  margin: 0 auto;
+}
+.cars-title {
+  opacity: 10%;
+  transform: translateY(70px);
+  z-index: 1;
+  text-align: center;
+  justify-self: center;
+}
+.cars-content {
+  background: var(--co-5);
+  z-index: 2;
+}
+
+.cars-content-about {
+  justify-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.cars-content-about h2 {
+  margin-bottom: 20px;
+}
+.cars-content-about p {
+  margin-bottom: 20px;
+  max-width: 25ch;
+}
+.cars-content-about button {
+  padding: 10px 40px;
+  background-color: transparent;
+  border: 1px solid var(--co-0);
+}
+.cars-content-about button:hover {
+  background-color: var(--co-2);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.cars-content:nth-child(2) {
+  transform: translateY(40px);
+  margin-bottom: 40px;
+}
+@media (max-width: 1095px) {
+  .cars-title {
+    margin-left: 60px;
+    transform: translateY(50px);
+  }
+}
+@media (max-width: 949px) {
+  .cars-title {
+    transform: translateY(40px);
+  }
+  .cars-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cars-content:nth-child(2) {
+    transform: translateY(0);
+    grid-row: 2;
+    grid-column: 1 / -1;
+  }
+}
+@media (max-width: 731px) {
+  .cars-container {
+    grid-template-columns: 1fr;
+  }
+  .cars-title {
+    margin-left: 30px;
+    transform: translateY(0);
+  }
+  .cars-content:nth-child(2) {
+    grid-row: 2;
+  }
+}
+@media (max-width: 493px) {
+  .cars-title {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 393px) {
+  .cars-title {
+    margin-left: 0px;
+  }
 }
