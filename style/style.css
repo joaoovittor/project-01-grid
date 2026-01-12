@@ -79,6 +79,14 @@
 .font-2-ac {
   font: 700 1.4rem/1.3 "Cormorant Garamond", serif;
 }
+.font-1-x {
+  font: 300 2.5rem/1 "Anton", serif;
+  text-transform: uppercase;
+}
+.font-2-x {
+  font: 300 1.5rem/1 "Anton", serif;
+  text-transform: uppercase;
+}
 @media (max-width: 1280px) {
   .font-1-ab {
     font-size: 10rem;
@@ -116,6 +124,12 @@
   }
 }
 @media (max-width: 595px) {
+  .font-1-x {
+    font-size: 2rem;
+  }
+  .font-2-x {
+    font-size: 1.2rem;
+  }
   .font-1-ab {
     font-size: 4rem;
     letter-spacing: 3vw;
@@ -467,4 +481,36 @@ a {
   .cars-title {
     margin-left: 0px;
   }
+}
+
+/*  Footer   */
+.footer-bg {
+  background-color: var(--co-7);
+}
+.footer {
+  display: grid;
+  padding: 20px 60px 60px 60px;
+  max-width: 1500px;
+  gap: 25px;
+  justify-self: center;
+  text-align: center;
+  margin: 0 auto;
+}
+.logo {
+  margin-bottom: -50px;
+  justify-self: center;
+  max-width: 400px;
+  width: 100%;
+}
+.footer-extra {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: max-content auto;
+  gap: 20px;
+  align-items: center;
+}
+.footer-extra img {
+  filter: invert(1);
+  width: 34px;
+  height: 34px;
 }
